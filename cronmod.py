@@ -9,4 +9,10 @@ system_cron.write()
 print(system_cron)
 print(job)
 
-# Read the cron file
+# Use croniter to make the time human readable
+
+# Read the crontab file
+# Modify the crontab file
+# Delete jobs from the crontab file
+# Add jobs to the crontab file
+
