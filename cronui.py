@@ -4,10 +4,11 @@ from textual.widgets import Button, Header, Footer, Static, ListView, ListItem, 
 
 class crons(Static):
     def compose(self) -> ComposeResult:
+        options = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+        arguments = [ListItem(Label(option)) for option in options]
+
         yield ListView(
-            ListItem(Label("One")),
-            ListItem(Label("Two")),
-            ListItem(Label("Three")),
+            *arguments
         )
 
 class buttons(Static):
